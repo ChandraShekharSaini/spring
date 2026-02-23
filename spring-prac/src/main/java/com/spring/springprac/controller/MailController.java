@@ -21,6 +21,7 @@ public class MailController {
     @Autowired
     MailerSendEmailService mailerSendEmailService;
 
+    //Mail Controller
     @PostMapping("/sendmail")
     public ResponseEntity<String> sendMail(@RequestBody EmailDetails emailDetails) throws Exception {
 
